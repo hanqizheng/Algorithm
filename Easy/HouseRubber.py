@@ -9,7 +9,7 @@ class Solution:
         """
         if nums is None or len(nums) == 0:
             return 0
-        
+
         result = nums[0]
         b = max(nums[0], nums[1])
         for i in range(1, len(nums)):
