@@ -7,6 +7,6 @@ def BubbleSort(alist):
                 alist[i + 1] = temp
 
 
-a = [5, 7, 1, 3, 5, 9, 6, 2, 4, 8]
+a = [5, 7, 1, 3, 5, 9, 6, 2, 4, 9]
 BubbleSort(a)
 print(a)
