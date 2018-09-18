@@ -25,7 +25,7 @@ a = [3, 2, 3]
 print test.majorityElement(a)
 # 当我还在傻傻的用两个for找的时候，python自己就有可以数出每个元素出现次数的函数
 
-        # tmp = list(set(nums))
-        # for i in tmp:
-        #     if nums.count(i) > len(nums)/2:
-        #         return i
+# tmp = list(set(nums))
+# for i in tmp:
+#     if nums.count(i) > len(nums)/2:
+#         return i
