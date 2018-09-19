@@ -1,7 +1,6 @@
 # 算法鸡汤
 ---
 ![](https://img.shields.io/badge/Level-Easy-brightgreen.svg?longCache=true&style=popout-square)
-
 ![](https://img.shields.io/badge/Thanks-Star-yellow.svg?longCache=true&style=popout-square)
 
 

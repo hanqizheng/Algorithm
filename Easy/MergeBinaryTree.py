@@ -21,4 +21,3 @@ class Solution(object):
         root.right = self.mergeTrees(t1.right, t2.right)
         return root
 
-# 我得研究一下他的案例是怎么输入的
