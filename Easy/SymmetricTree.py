@@ -6,7 +6,7 @@
 #         self.right = None
 
 
-class Solution:  
+class Solution:
     def isSymmetric(self, root):
         """
         :type root: TreeNode
