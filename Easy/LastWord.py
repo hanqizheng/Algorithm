@@ -9,7 +9,7 @@ class Solution:
 
         if len(s) == 0:
             return 0
-        
+
         for i in range(len(res)):
             if res[i] != '':
                 result.append(res[i])
