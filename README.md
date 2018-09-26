@@ -23,7 +23,7 @@
 
 - ### 二叉树遍历
    * [前序遍历](https://github.com/hanqizheng/Algorithm/blob/master/Medium/144.py)
-   * [中序遍历](https://github.com/hanqizheng/Algorithm/blob/master/Memium/94.py)
+   * [中序遍历](https://github.com/hanqizheng/Algorithm/blob/master/Medium/94.py)
    * [后序遍历](https://github.com/hanqizheng/Algorithm/blob/master/Hard/145.py)
    * [层次遍历](https://github.com/hanqizheng/Algorithm/blob/master/Easy/107.py)
 
