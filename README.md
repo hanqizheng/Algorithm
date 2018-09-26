@@ -22,7 +22,11 @@
 ## Sum Up
 
 - ### 二叉树遍历
+<<<<<<< HEAD
    * [前序遍历](https://github.com/hanqizheng/Algorithm/blob/master/Medium/144.py)
+=======
+   * [前序遍历](https://github.com/hanqizheng/Algorithm/blob/master/Easy/144.py)
+>>>>>>> 30ee62a8bba2a9521dc30004c1773b290e5b5d06
    * [中序遍历](https://github.com/hanqizheng/Algorithm/blob/master/Memium/94.py)
    * [后序遍历](https://github.com/hanqizheng/Algorithm/blob/master/Hard/145.py)
    * [层次遍历](https://github.com/hanqizheng/Algorithm/blob/master/Easy/107.py)
