@@ -3,7 +3,7 @@
 
 // 为了表示给定链表中的环，我们使用整数 pos 来表示链表尾连接到链表中的位置（索引从 0 开始）。 如果 pos 是 -1，则在该链表中没有环。
 
- 
+
 
 // 示例 1：
 
@@ -42,3 +42,22 @@ var hasCycle = function (head) {
 };
 
 
+// 双指针
+// 一个快一个慢，如果有环，快的和慢的一定会相遇
+// 如果没环，快的则会先变成null
+
+var hasCycle = function (head) {
+  if (!head) return false
+
+  let slow = head
+  let fast = head.next
+
+  while (slow !== fast) {
+    if (fast === null || fast.next === null) return false
+
+    slow = slow.next
+    fast = fast.next.next
+  }
+
+  return true
+};

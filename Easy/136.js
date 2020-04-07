@@ -14,8 +14,7 @@
 // 输入: [4,1,2,1,2]
 // 输出: 4
 
-
-// 自己想出来的hash map的方法
+// 我的方法 hash
 var singleNumber = function (nums) {
   const map = {}
 
