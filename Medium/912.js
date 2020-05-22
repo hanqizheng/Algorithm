@@ -134,3 +134,22 @@ var sortArray = function (nums) {
 function merge(left, right) {
   
 }
+
+// 希尔排序(其实就是一种高效的插入排序)
+var sortArray = function (nums) {
+  let len = nums.length
+  for (let step = len >> 1; step > 0; step >>= 1) {
+      // 从这里开始就是插入排序，只是把i跟step联系在一起
+      for (let i = step; i < len; i++) {
+          let temp = nums[i]
+          let j = i - step
+          while( j >= 0) {
+              if (nums[j] < temp) break
+              nums[j + step] = nums[j]
+              j -= step
+          }
+          nums[j + step] = temp
+      }
+  }
+  return nums
+};

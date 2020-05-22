@@ -1,27 +1,19 @@
-var levelOrderBottom = function (root) {
-  if (root === null) return root
+function selectSort(nums) {
+  for (let i = 0; i < nums.length; i++) {
+    let min = i
+    let j = i + 1
 
-  let stack = []
-  stack.push(root)
-
-  let result = []
-  while (stack.length) {
-    let temp = []
-
-    for (let i = 0; i < stack.length; i++) {
-      if (stack[i].left) {
-        temp.push(stack[i].left.val)
+    while (j < nums.length) {
+      if (nums[j] < nums[min]) {
+        min = j
       }
-      if (stack[i].right) {
-        temp.push(stack[i].right.val)
-      }
+      j++
     }
-    console.log('temp: ', temp)
-    stack = temp
-    result.push(temp)
+
+    [nums[i], nums[min]] = [nums[min], nums[i]]
   }
 
-  return result
-};
+  return nums
+}
 
-console.log(levelOrderBottom([3, 9, 20, null, null, 15, 7]))
+console.log(selectSort([3, 2, 4, 1, 5, 0, -5, 6, -1]))
