@@ -1,19 +1,31 @@
-function selectSort(nums) {
-  for (let i = 0; i < nums.length; i++) {
-    let min = i
-    let j = i + 1
+// function test(a) {
+//   return new Promise((resolve, reject) => {
+//     if (a === 1) {
+//       resolve(a)
+//     } else {
+//       throw new Error('error')
+//       reject('errrrr')
+//     }
+//   })
+// }
 
-    while (j < nums.length) {
-      if (nums[j] < nums[min]) {
-        min = j
-      }
-      j++
-    }
+// // test(1).then(val => {
+// //   console.log(val)
+// // })
 
-    [nums[i], nums[min]] = [nums[min], nums[i]]
-  }
+// test(2).then(val => {
+//   console.log(val)
+// })
+// console.log('12344')
 
-  return nums
-}
-
-console.log(selectSort([3, 2, 4, 1, 5, 0, -5, 6, -1]))
+const a = new Promise((resolve, reject) => {
+  resolve(111)
+}).then(val => {
+  throw new Error('error1')
+  return val
+}).then(val => {
+  console.log(val)
+  throw new Error('error2')
+}).catch(err => {
+  console.log(err)
+})
