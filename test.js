@@ -33,6 +33,7 @@ function compare(a, b, c) {
       return item
     }
   })
+
   return result.join('')
 }
 
