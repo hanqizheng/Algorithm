@@ -6,16 +6,16 @@ function compare(a, b, c) {
   let strB = [...b]
   // 结果数组，最后变为字符串
   let result = []
-  for(let i = 0; i < strA.length; i++) {
+  for (let i = 0; i < strA.length; i++) {
     let j = 0
     // 让i记录其实位置，pivot则用来移动比较目标字符串
     let pivot = i
-    for (;j < strB.length; j++) {
+    for (; j < strB.length; j++) {
       if (strA[pivot] !== strB[j]) break
       pivot++
     }
     if (j === strB.length) {
-      for(let k = i; k < strB.length + i; k++) {
+      for (let k = i; k < strB.length + i; k++) {
         // 都标记为0是便于以后替换，0是要舍弃的数组元素
         strA[k] = 0
       }
@@ -37,8 +37,8 @@ function compare(a, b, c) {
   return result.join('')
 }
 
-compare(
-  'aabcdecedef',
-  'e',
-  'g'
-)
+console.log(compare(
+  'aaa',
+  'a',
+  'gaa'
+))
