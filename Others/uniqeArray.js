@@ -28,3 +28,21 @@ function uniqueArray2(arr) {
 }
 
 console.log(uniqueArray2([1, 1, 7, 5, 2, 3, 3, 3, 4, 4, 5, 2]))
+
+// 暴力循环
+
+function uniqueArray3(arr) {
+  if (!arr.length) return []
+
+  for (let i = 0; i < arr.length - 1; i++) {
+    for(let j = i + 1; j < arr.length; j++) {
+      if (arr[i] === arr[j]) {
+        arr[j] = undefined
+      }
+    }
+  }
+
+  return arr.filter(item => item !== undefined)
+}
+
+console.log(uniqueArray2([1, 1, 7, 5, 2, 3, 3, 3, 4, 4, 5, 2]))
