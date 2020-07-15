@@ -24,6 +24,8 @@
 // 链接：https://leetcode-cn.com/problems/binary-tree-level-order-traversal
 // 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 
+
+// bfs方法
 var levelOrder = function (root) {
   if (!root) return []
 
@@ -45,3 +47,21 @@ var levelOrder = function (root) {
 
   return result
 };
+
+// dfs方法
+var levelOrder = function(root) {
+  if (!root) return []
+
+  let res = []
+
+  dfs(root, 0, res)
+  return res
+};
+
+function dfs(root, step, res) {
+  if (!res[step]) res[step] = []
+
+  res[step].push(root.val)
+  if (root.left) dfs(root.left, step + 1, res)
+  if (root.right) dfs(root.right, step + 1, res)
+}
