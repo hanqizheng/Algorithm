@@ -11,6 +11,8 @@
  * setState((preState) => { name: 'han' })
  */
 
+ // 详细参照react-use这个库里的useSetState
+
  function useSetState(state) {
    const [val, setVal] = useState(state)
 
